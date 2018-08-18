@@ -2,16 +2,30 @@ package run;
 
 import java.awt.*;        // Using AWT container and component classes
 import java.awt.event.*;  // Using AWT event classes and listener interfaces
- 
+
+/**
+ * 
+ * 장기하랑 최다니엘이랑 섞어놓은거같은 친구나 도와줘볼라는 프로그램 만들기 
+ * jar file 에서 exe 로 나중에 변환 함
+ * 
+ * 
+ * Everything I learned here was from 
+ * https://www3.ntu.edu.sg/home/ehchua/programming/java/j4a_gui.html 
+ * Special thanks to this site creator.
+ * 
+ * @author CW
+ *
+ */
 // An AWT program inherits from the top-level container java.awt.Frame
-public class AWTCounter extends Frame implements ActionListener, WindowListener {
+public class MatItNeunJamMukGoSipDa extends Frame implements ActionListener, WindowListener {
+	
 	private Label lblCount;    // Declare a Label component 
 	private TextField tfCount; // Declare a TextField component 
 	private Button btnCount;   // Declare a Button component
 	private int count = 0;     // Counter's value
 
 	// Constructor to setup GUI components and event handlers
-	public AWTCounter () {
+	public MatItNeunJamMukGoSipDa () {
 		setLayout(new FlowLayout());
 		// "super" Frame, which is a Container, sets its layout to FlowLayout to arrange
 		// the components from left-to-right, and flow to next row from top-to-bottom.
@@ -56,7 +70,7 @@ public class AWTCounter extends Frame implements ActionListener, WindowListener 
 	// The entry main() method
 	public static void main(String[] args) {
 		// Invoke the constructor to setup the GUI, by allocating an instance
-		AWTCounter app = new AWTCounter();
+		MatItNeunJamMukGoSipDa app = new MatItNeunJamMukGoSipDa();
 		// or simply "new AWTCounter();" for an anonymous instance
 	}
 
